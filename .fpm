@@ -1,0 +1,11 @@
+-s dir
+-t rpm
+--name openssh
+--version 7.9p1
+--description "update openssh to 7.9p1 for centos 7"
+--architecture x86_64
+--url "https://github.com/jordansissel/fpm"
+--maintainer "zh1103@126.com"
+--prefix /tmp
+--after-install ssh/update_openssh.sh
+ssh
